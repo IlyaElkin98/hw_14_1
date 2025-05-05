@@ -9,9 +9,3 @@ class Category:
         self.products = products
 
 
-
-
-
-
-
-
