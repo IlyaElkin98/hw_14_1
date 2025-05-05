@@ -1,3 +1,6 @@
+from src.oop_class_category import Category
+from src.oop_class_product import Product
+
 if __name__ == "__main__":
     product1 = Product("Samsung Galaxy S23 Ultra", "256GB, Серый цвет, 200MP камера", 180000.0, 5)
     product2 = Product("Iphone 15", "512GB, Gray space", 210000.0, 8)
@@ -22,7 +25,7 @@ if __name__ == "__main__":
                          "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни",
                          [product1, product2, product3])
 
-    print(category1.name == "Смартфоны")
+    print(category1.name)
     print(category1.description)
     print(len(category1.products))
     print(category1.category_count)
