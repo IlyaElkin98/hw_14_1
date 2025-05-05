@@ -1,6 +1,3 @@
-from src.oop_class_product import Product
-
-
 class Category:
     name: str
     description: str
@@ -14,9 +11,6 @@ class Category:
         self.products = products
         Category.product_count += len(products) if products else 0
         Category.category_count += 1
-
-    def add_prod(self, product: Product):
-        self.products.append(product)
 
 
 
