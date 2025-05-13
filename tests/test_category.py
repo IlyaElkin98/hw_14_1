@@ -21,3 +21,4 @@ def test_category(category_1, category_2, product_1, product_2, product_3, produ
 
     assert category_1.product_count == 4
     assert category_2.product_count == 4
+

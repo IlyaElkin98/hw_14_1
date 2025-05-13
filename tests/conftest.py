@@ -58,3 +58,4 @@ def category_2(product_4):
         "станет вашим другом и помощником",
         products=[product_4],
     )
+
