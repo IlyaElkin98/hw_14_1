@@ -34,3 +34,5 @@ if __name__ == "__main__":
     new_product.price = 0
     print(new_product.price)
 
+
+
