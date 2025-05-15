@@ -22,3 +22,7 @@ black = "^25.1.0"
 icloud = "^0.1"
 mypy = "^1.15.0"
 
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^6.1.1"
+

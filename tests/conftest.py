@@ -1,3 +1,5 @@
+from idlelib.run import fixdoc
+
 import pytest
 
 from src.oop_class_category import Category
@@ -31,11 +33,19 @@ def product_3():
         quantity=14,
     )
 
-
 @pytest.fixture
 def product_4():
     return Product(
-        name="55 QLED 4K", description="Фоновая подсветка", price=123000.0, quantity=7
+        name="55\" QLED 4K",
+        description="Фоновая подсветка",
+        price=123000.0,
+        quantity=7,
+    )
+
+@pytest.fixture
+def new_product():
+    return Product(
+        name="Samsung Galaxy S23 Ultra", description="256GB, Серый цвет, 200MP камера", price=180000.0, quantity=5
     )
 
 
@@ -50,12 +60,6 @@ def category_1(product_1, product_2, product_3):
     )
 
 
-@pytest.fixture
-def category_2(product_4):
-    return Category(
-        name="Телевизоры",
-        description="Современный телевизор, который позволяет наслаждаться просмотром, "
-        "станет вашим другом и помощником",
-        products=[product_4],
-    )
+
+
 
