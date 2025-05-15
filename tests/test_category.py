@@ -11,3 +11,4 @@ def test_category(category_1, product_1, product_2, product_3):
 
 
 
+
