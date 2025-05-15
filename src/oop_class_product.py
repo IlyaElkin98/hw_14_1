@@ -23,10 +23,9 @@ class Product:
 
     @classmethod
     def new_product(cls, new_product):
-        name = new_product['name']
-        description = new_product['description']
-        price = new_product['price']
-        quantity = new_product['quantity']
+        name = new_product["name"]
+        description = new_product["description"]
+        price = new_product["price"]
+        quantity = new_product["quantity"]
 
         return cls(name, description, price, quantity)
-
