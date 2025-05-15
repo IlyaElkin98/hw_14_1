@@ -33,19 +33,24 @@ def product_3():
         quantity=14,
     )
 
+
 @pytest.fixture
 def product_4():
     return Product(
-        name="55\" QLED 4K",
+        name='55" QLED 4K',
         description="Фоновая подсветка",
         price=123000.0,
         quantity=7,
     )
 
+
 @pytest.fixture
 def new_product():
     return Product(
-        name="Samsung Galaxy S23 Ultra", description="256GB, Серый цвет, 200MP камера", price=180000.0, quantity=5
+        name="Samsung Galaxy S23 Ultra",
+        description="256GB, Серый цвет, 200MP камера",
+        price=180000.0,
+        quantity=5,
     )
 
 
@@ -58,8 +63,3 @@ def category_1(product_1, product_2, product_3):
         "но и получения дополнительных функций для удобства жизни",
         products=[product_1, product_2, product_3],
     )
-
-
-
-
-
